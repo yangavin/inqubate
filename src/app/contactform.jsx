@@ -52,7 +52,7 @@ export const ContactUs = () => {
         required
       />
       {!isSubmitted && !sending && (
-        <button className="font-bold border border-white pb-1 rounded-lg cursor-pointer w-44 h-12 transition-transform duration-400 hover:-translate-y-1 hover:bg-slate-900 mt-8">
+        <button className="font-bold border border-white pb-1 mb-4 rounded-lg cursor-pointer w-44 h-12 transition-transform duration-400 hover:-translate-y-1 hover:bg-slate-900 mt-8">
           Submit
         </button>
       )}
