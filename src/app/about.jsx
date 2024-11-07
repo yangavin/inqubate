@@ -4,15 +4,10 @@ import 'tailwindcss/tailwind.css';
 
 const About = () => {
     const images = [
-        { URL: '/images/inqubate_photo.png' },
-        { URL: '/images/image2.png' },
-        { URL: '/images/image4.png' },
-        { URL: '/images/Cone1.svg' },
-        { URL: '/images/Cone2.svg' },
-        { URL: '/images/Cone23.svg' },
-        { URL: '/images/Vector1.svg' },
-        { URL: '/images/Vector0.svg' },
-    ];
+        '/images/inqubate_photo.png',
+        '/images/image2.png',
+        '/images/image4.png',
+    ]
 
     return (
         <div className=" min-h-screen mb-36 overflow-hidden">
@@ -43,7 +38,7 @@ const About = () => {
 
                 <div className="absolute top-[115px] left-[-20px]  ">
                     <div className="absolute left-[194px] bottom-[187px]  w-[397px] h-[517px] bg-white/30 backdrop-lg pl-4 pt-4 pb-4 rounded-[15px] "></div>
-                    <ImageSliders className="relative" />
+                    <ImageSliders className="relative" images={images} />
                 </div>
 
                 {/*vector on the background*/}

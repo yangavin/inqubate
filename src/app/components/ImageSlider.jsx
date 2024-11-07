@@ -5,13 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const images = [
-  '/images/inqubate_photo.png',
-  '/images/image2.png',
-  '/images/image4.png',
-];
-
-const ImageSlider = () => {
+const ImageSlider = ({ images }) => {
   const settings = {
     dots: true,
     infinite: true,
