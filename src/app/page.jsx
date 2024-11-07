@@ -2,7 +2,7 @@
 import Landing from "./Landing";
 import About from "./about";
 import ContactUs from "./contact";
-import Team from "./team";
+import Team from "./Team";
 export default function Home() {
   return (
     <>
