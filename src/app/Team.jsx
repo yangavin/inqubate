@@ -3,18 +3,18 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
 const ProfileCard = ({ name, role, description, image }) => {
   return (
-    <div className="flex items-center bg-gray-800 p-6 rounded-lg shadow-lg max-w-3xl mx-auto space-x-6 w-[900px] h-[300px]">
+    <div className="flex flex-col sm:flex-row items-center bg-gray-800 p-6 rounded-lg shadow-lg max-w-lg sm:max-w-3xl mx-auto space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-[900px] h-auto sm:h-[300px]">
       <img
         src={image}
         alt={`${name}'s profile`}
-        className="w-64 h-64 rounded-lg object-cover"
+        className="w-32 h-32 sm:w-64 sm:h-64 rounded-lg object-cover"
       />
-      <div className="flex flex-col justify-between text-left h-full w-[400px]">
-        <h2 className="text-3xl font-bold text-white">{name}</h2>
-        <h3 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-500">
+      <div className="flex flex-col justify-between text-left h-full w-full sm:w-[400px]">
+        <h2 className="text-xl sm:text-3xl font-bold text-white">{name}</h2>
+        <h3 className="text-md sm:text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-500">
           {role}
         </h3>
-        <p className="text-white text-sm mt-2 flex-grow overflow-hidden line-clamp-3">
+        <p className="text-white text-sm mt-2 flex-grow overflow-hidden sm:line-clamp-3">
           {description}
         </p>
       </div>
@@ -75,8 +75,8 @@ const TeamSection = () => {
   };
 
   return (
-    <div className="p-8 mb-16 text-center">
-      <div className="flex items-center justify-center space-x-8">
+    <div className="p-4 sm:p-8 mb-16 text-center">
+      <div className="flex items-center justify-center space-x-4 sm:space-x-8">
         <button
           onClick={handlePrev}
           className="text-white bg-[#47545a] rounded-full p-2 hover:bg-gray-700 transition ease-in-out duration-300 hover:scale-110"
@@ -99,15 +99,17 @@ const TeamSection = () => {
         </button>
       </div>
 
-      <div className="flex justify-center space-x-8 mt-8">
+      <div className="flex justify-center space-x-4 sm:space-x-8 mt-8">
         {profiles.map((profile, index) => (
           <div key={index} className="flex flex-col items-center text-white">
             <img
               src={profile.image}
               alt={`${profile.name}'s profile`}
-              className={`w-24 h-24 rounded-full object-cover ${index === currentIndex ? "border-2 border-white" : ""}`}
+              className={`w-16 h-16 sm:w-24 sm:h-24 rounded-full object-cover ${
+                index === currentIndex ? "border-2 border-white" : ""
+              }`}
             />
-            <span className="text-sm mt-2">{profile.name}</span>
+            <span className="text-xs sm:text-sm mt-2">{profile.name}</span>
             <span className="text-xs">{profile.role}</span>
           </div>
         ))}
@@ -126,8 +128,8 @@ const TeamSection = () => {
 export default function Team() {
   return (
     <div className="relative">
-      <div className="ml-64 w-1/2">
-        <h1 className="text-6xl font-bold mb-4" id="contact">
+      <div className="mx-4 sm:ml-64 sm:w-1/2">
+        <h1 className="text-4xl sm:text-6xl font-bold mb-4" id="contact">
           inQUbate Team
         </h1>
         <p className="mb-8">
