@@ -1,9 +1,9 @@
 "use client";
 
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ImageSlider = ({ images }) => {
   const settings = {
@@ -23,32 +23,35 @@ const ImageSlider = ({ images }) => {
     <div
       className="relative"
       style={{
-        width: '387px',
-        height: '700px',
-        overflow: 'visible',
+        width: "387px",
+        height: "700px",
+        overflow: "visible",
       }}
     >
-      <Slider {...settings} style={{ width: '387px', height: '508px', left: '200px' }}>
+      <Slider
+        {...settings}
+        style={{ width: "387px", height: "508px", left: "200px" }}
+      >
         {images.map((src, index) => (
           <div
             key={index}
             style={{
-              width: '387px',
-              height: '508px',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              width: "387px",
+              height: "508px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <img
               src={src}
               alt={`Slide ${index + 1}`}
               style={{
-                width: '387px',
-                height: '508px',
-                objectFit: 'cover',
-                border: '4px rgba(255, 255, 255, 0.3)',
-                borderRadius: '15px',
+                width: "387px",
+                height: "508px",
+                objectFit: "cover",
+                border: "4px rgba(255, 255, 255, 0.3)",
+                borderRadius: "15px",
               }}
             />
           </div>

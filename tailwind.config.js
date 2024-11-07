@@ -1,4 +1,4 @@
-const { transform } = require('next/dist/build/swc');
+const { transform } = require("next/dist/build/swc");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -11,17 +11,17 @@ module.exports = {
     extend: {
       keyframes: {
         slide: {
-          "0%": {transform: "translateX(0%)"},
-          "100%": {transform: "translateX(0)"}
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(0)" },
         },
         fade: {
-          "0%": {opacity: "0"},
-          "100%": {opacity: "100%"}
+          "0%": { opacity: "0" },
+          "100%": { opacity: "100%" },
         },
       },
       animation: {
-        "slider": "slide 17s linear infinite",
-        "fade-in": "fade .5s ease-out forwards"
+        slider: "slide 17s linear infinite",
+        "fade-in": "fade .5s ease-out forwards",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
