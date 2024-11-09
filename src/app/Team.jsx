@@ -7,42 +7,46 @@ export const profiles = [
     role: "Co-chair",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, optio voluptatem. Iste repellendus assumenda, perspiciatis a dolor ea laudantium. Omnis eaque eveniet explicabo beatae enim vel consequatur quae nesciunt odit!",
-    image: "https://avatarfiles.alphacoders.com/364/364814.jpg",
+    image: "/team/Daniel_Wang.png",
   },
   {
     name: "Joseph Liao",
     role: "Director of Marketing",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam modi delectus ab nostrum, quis minus dignissimos voluptatum mollitia accusantium, eum aperiam accusamus officia dolorem eaque obcaecati similique inventore. Illum rerum ullam a dicta, adipisci distinctio amet enim asperiores.",
-    image: "https://avatarfiles.alphacoders.com/364/364731.png",
+    image: "/team/Daniel_Wang.png",
   },
   {
     name: "Sarah Lee",
     role: "Product Manager",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione maiores tenetur necessitatibus explicabo, blanditiis ipsam soluta vel. Architecto, ea saepe repellat libero autem totam voluptate maiores ducimus facere, corrupti voluptatum porro id. Distinctio, quidem aliquam?",
-    image: "https://avatarfiles.alphacoders.com/365/365483.png",
+    image: "/team/Daniel_Wang.png",
   },
   {
     name: "Tom Green",
     role: "Lead Developer",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla maiores ipsam ipsum vel consequuntur praesentium fugiat repellendus aperiam provident aliquam, eum asperiores velit rem aspernatur! Corrupti, quibusdam error. Nemo exercitationem aliquam minima, similique, consequatur omnis sed ipsa sunt sint magnam dolorum repudiandae aspernatur.",
-    image: "https://avatarfiles.alphacoders.com/364/364764.jpg",
+    image: "/team/Daniel_Wang.png",
   },
 ];
 
 export const ProfileCard = ({ name, role, description, image }) => {
   return (
-    <div className="flex flex-col sm:flex-row items-center bg-gray-800 p-6 rounded-lg shadow-lg max-w-lg sm:max-w-3xl mx-auto space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-[900px] h-auto sm:h-[300px]">
-      <img
-        src={image}
-        alt={`${name}'s profile`}
-        className="w-32 h-32 sm:w-64 sm:h-64 rounded-lg object-cover"
-      />
+    <div className="flex flex-col bg-opacity-0 sm:flex-row items-center bg-gray-800 p-6 rounded-lg shadow-lg max-w-lg sm:max-w-3xl mx-auto space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-[900px] h-auto sm:h-[300px]">
+      <div className="relative w-72 h-[26rem] top-12">
+        <div class="absolute inset-x-0 -left-6 right-2 top-12 h-[54%] bg-[#BFBFBF4D] rounded-[10%]" />
+        <img
+          src={image}
+          alt={`${name}'s profile`}
+          class="w-32 h-32 sm:w-64 sm:h-64 object-cover absolute top-4"
+        />
+      </div>
       <div className="flex flex-col justify-between text-left h-full w-full sm:w-[400px]">
         <h2 className="text-xl sm:text-3xl font-bold text-white">{name}</h2>
-        <h3 className="text-md sm:text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-500">
+
+        <h3 className="w-fit text-md sm:text-lg font-semibold bg-gradient-to-r from-[#3F99BA] to-[#FF3144] text-transparent bg-clip-text">
           {role}
         </h3>
         <p className="text-white text-sm mt-2 flex-grow overflow-hidden sm:line-clamp-3">

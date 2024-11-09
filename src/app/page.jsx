@@ -8,11 +8,11 @@ import TeamPage from "./TeamPage";
 export default function Home() {
   return (
     <>
-      <Landing />
+      {/* <Landing />
       <About />
       <Team />
-      <ContactUs />
-      {/* <TeamPage /> */}
+      <ContactUs /> */}
+      <TeamPage />
     </>
   );
 }

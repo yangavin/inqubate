@@ -3,6 +3,8 @@ import Image from "next/image";
 import { profiles, ProfileCard } from "./Team";
 import { useState, useEffect } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import { members } from "./index";
+import { founders } from "./index";
 
 export default function TeamPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -69,7 +71,7 @@ export default function TeamPage() {
         className="absolute -z-30 right-0 top-0"
       />
 
-      <div className="flex flex-col ml-80 mt-20">
+      <div className="px-[24rem] 2xl:px-[20rem] lg:px-[10rem] sm:px-[4rem] flex flex-col align-items-start mt-20">
         <h1 className="text-6xl font-bold ml-10 mb-4">Our Team</h1>
         <p className="mb-8 ml-10 mt-6 font-thin">
           Indulge in the ultimate expression of sophistication with Luxe
@@ -105,22 +107,65 @@ export default function TeamPage() {
           </div>
 
           <div className="flex justify-center space-x-4 sm:space-x-8 mt-8">
-            {profiles.map((profile, index) => (
+            {members.slice(0, 2).map((member, index) => (
               <div
                 key={index}
                 className="flex flex-col items-center text-white"
               >
                 <img
-                  src={profile.image}
-                  alt={`${profile.name}'s profile`}
-                  className={`w-16 h-16 sm:w-24 sm:h-24 rounded-full object-cover ${
-                    index === currentIndex ? "border-2 border-white" : ""
-                  }`}
+                  src={member.image}
+                  alt={`${member.name}'s profile`}
+                  className={
+                    "w-16 h-16 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-white"
+                  }
                 />
-                <span className="text-xs sm:text-sm mt-2">{profile.name}</span>
-                <span className="text-xs">{profile.role}</span>
+                <span className="text-xs sm:text-sm mt-2">{member.name}</span>
+                <span className="text-xs">{member.role}</span>
               </div>
             ))}
+          </div>
+          <div className="flex flex-col justify-center gap-y-14 max-w-4xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-16 mt-10">
+              {members.slice(2, members.length).map((member, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center text-white"
+                >
+                  <img
+                    src={member.image}
+                    alt={`${member.name}'s profile`}
+                    className={
+                      "w-16 h-16 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-white"
+                    }
+                  />
+                  <span className="text-xs sm:text-sm mt-2">{member.name}</span>
+                  <span className="text-xs">{member.role}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center gap-y-14 max-w-4xl mx-auto mt-36">
+            <h2 className="text-2xl font-thin text-white mt-10">FOUNDERS</h2>
+            <div className="flex flex-wrap justify-center gap-16">
+              {founders.map((founder, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center text-white"
+                >
+                  <img
+                    src={founder.image}
+                    alt={`${founder.name}'s profile`}
+                    className={
+                      "w-16 h-16 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-white"
+                    }
+                  />
+                  <span className="text-xs sm:text-sm mt-2">
+                    {founder.name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
