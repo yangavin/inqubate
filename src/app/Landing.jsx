@@ -9,7 +9,7 @@ export default function Landing() {
       <img
         src="landing-morph-lines.svg"
         alt="webs"
-        className="-z-50 absolute"
+        className="-z-50 absolute w-full"
       />
       <nav className="px-20 py-6 flex bg-none">
         <Image

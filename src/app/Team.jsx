@@ -1,7 +1,38 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
-const ProfileCard = ({ name, role, description, image }) => {
+export const profiles = [
+  {
+    name: "Daniel Wang",
+    role: "Co-chair",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, optio voluptatem. Iste repellendus assumenda, perspiciatis a dolor ea laudantium. Omnis eaque eveniet explicabo beatae enim vel consequatur quae nesciunt odit!",
+    image: "https://avatarfiles.alphacoders.com/364/364814.jpg",
+  },
+  {
+    name: "Joseph Liao",
+    role: "Director of Marketing",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam modi delectus ab nostrum, quis minus dignissimos voluptatum mollitia accusantium, eum aperiam accusamus officia dolorem eaque obcaecati similique inventore. Illum rerum ullam a dicta, adipisci distinctio amet enim asperiores.",
+    image: "https://avatarfiles.alphacoders.com/364/364731.png",
+  },
+  {
+    name: "Sarah Lee",
+    role: "Product Manager",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione maiores tenetur necessitatibus explicabo, blanditiis ipsam soluta vel. Architecto, ea saepe repellat libero autem totam voluptate maiores ducimus facere, corrupti voluptatum porro id. Distinctio, quidem aliquam?",
+    image: "https://avatarfiles.alphacoders.com/365/365483.png",
+  },
+  {
+    name: "Tom Green",
+    role: "Lead Developer",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla maiores ipsam ipsum vel consequuntur praesentium fugiat repellendus aperiam provident aliquam, eum asperiores velit rem aspernatur! Corrupti, quibusdam error. Nemo exercitationem aliquam minima, similique, consequatur omnis sed ipsa sunt sint magnam dolorum repudiandae aspernatur.",
+    image: "https://avatarfiles.alphacoders.com/364/364764.jpg",
+  },
+];
+
+export const ProfileCard = ({ name, role, description, image }) => {
   return (
     <div className="flex flex-col sm:flex-row items-center bg-gray-800 p-6 rounded-lg shadow-lg max-w-lg sm:max-w-3xl mx-auto space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-[900px] h-auto sm:h-[300px]">
       <img
@@ -23,37 +54,6 @@ const ProfileCard = ({ name, role, description, image }) => {
 };
 
 const TeamSection = () => {
-  const profiles = [
-    {
-      name: "Daniel Wang",
-      role: "Co-chair",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, optio voluptatem. Iste repellendus assumenda, perspiciatis a dolor ea laudantium. Omnis eaque eveniet explicabo beatae enim vel consequatur quae nesciunt odit!",
-      image: "https://avatarfiles.alphacoders.com/364/364814.jpg",
-    },
-    {
-      name: "Joseph Liao",
-      role: "Director of Marketing",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam modi delectus ab nostrum, quis minus dignissimos voluptatum mollitia accusantium, eum aperiam accusamus officia dolorem eaque obcaecati similique inventore. Illum rerum ullam a dicta, adipisci distinctio amet enim asperiores.",
-      image: "https://avatarfiles.alphacoders.com/364/364731.png",
-    },
-    {
-      name: "Sarah Lee",
-      role: "Product Manager",
-      description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione maiores tenetur necessitatibus explicabo, blanditiis ipsam soluta vel. Architecto, ea saepe repellat libero autem totam voluptate maiores ducimus facere, corrupti voluptatum porro id. Distinctio, quidem aliquam?",
-      image: "https://avatarfiles.alphacoders.com/365/365483.png",
-    },
-    {
-      name: "Tom Green",
-      role: "Lead Developer",
-      description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla maiores ipsam ipsum vel consequuntur praesentium fugiat repellendus aperiam provident aliquam, eum asperiores velit rem aspernatur! Corrupti, quibusdam error. Nemo exercitationem aliquam minima, similique, consequatur omnis sed ipsa sunt sint magnam dolorum repudiandae aspernatur.",
-      image: "https://avatarfiles.alphacoders.com/364/364764.jpg",
-    },
-  ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

@@ -12,7 +12,7 @@ export default function Tube() {
   // }, [])
 
   return (
-    <div className="absolute -z-10 tube-container">
+    <div className="absolute -z-10 tube-container w-full">
       <Image
         src="tube.svg"
         width={0}
