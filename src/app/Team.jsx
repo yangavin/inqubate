@@ -36,11 +36,11 @@ export const ProfileCard = ({ name, role, description, image }) => {
   return (
     <div className="flex flex-col bg-opacity-0 sm:flex-row items-center bg-gray-800 p-6 rounded-lg shadow-lg max-w-lg sm:max-w-3xl mx-auto space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-[900px] h-auto sm:h-[300px]">
       <div className="relative w-72 h-[26rem] top-12">
-        <div class="absolute inset-x-0 -left-6 right-2 top-12 h-[54%] bg-[#BFBFBF4D] rounded-[10%]" />
+        <div className="absolute inset-x-0 -left-6 right-2 top-12 h-[54%] bg-[#BFBFBF4D] rounded-[10%]" />
         <img
           src={image}
           alt={`${name}'s profile`}
-          class="w-32 h-32 sm:w-64 sm:h-64 object-cover absolute top-4"
+          className="w-32 h-32 sm:w-64 sm:h-64 object-cover absolute top-4"
         />
       </div>
       <div className="flex flex-col justify-between text-left h-full w-full sm:w-[400px]">
