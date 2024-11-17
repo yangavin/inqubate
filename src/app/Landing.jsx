@@ -1,37 +1,10 @@
 import Image from "next/image";
-import Navigation from "./Navigation";
 import Tube from "./Tube";
 import Slider from "./Slider";
 
 export default function Landing() {
   return (
     <div className="mb-36">
-      <img
-        src="landing-morph-lines.svg"
-        alt="webs"
-        className="-z-50 absolute w-full"
-      />
-      <nav className="px-20 py-6 flex bg-none">
-        <Image
-          src="inqubate.svg"
-          alt="inqubate"
-          width={250}
-          height={250}
-          className=""
-        />
-        <div className="grow flex gap-5 justify-center">
-          <Navigation href="#home">Home</Navigation>
-          <Navigation href="#about">Who we are</Navigation>
-          <Navigation href="#about">Ventures</Navigation>
-          <Navigation href="#contact">Blog</Navigation>
-        </div>
-        <a
-          href="#contact"
-          className="w-48 rounded-md text-center px-6 py-4 bg-gradient-to-r from-red-500 to-pink-700 shadow-[2px_5px_20px_grey] hover:-translate-y-1 transition-transform"
-        >
-          Contact Us
-        </a>
-      </nav>
       <Tube />
       <Image
         src="red-gradient.svg"
