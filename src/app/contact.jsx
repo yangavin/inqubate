@@ -5,8 +5,10 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="relative justify-center items-center w-[1400px] h-screen">
+    <div className="relative justify-center items-center w-[1400px] h-[725px]">
+
       <div className="relative w-[1350px] left-[300px] sm:w-[60vw] sm:h-[60vh] lg:w-[70vw] lg:h-[70vh]">
+
         <h1 className="text-4xl sm:text-6xl font-bold mb-4" id="contact">
           Support Us
         </h1>
@@ -17,11 +19,14 @@ const Contact = () => {
 
         <Contactform />
 
-        {/* Align the tube to the right side of the parent container */}
-        <div className="absolute top-[-270px] right-[-145px]">
-          {/* <C_tube /> */}
+        <div className="relative -z-10">
+          <div className="absolute top-0 right-0 translate-x-[13.25%] translate-y-[-64%]">
+            <C_tube />
+          </div>
         </div>
+
       </div>
+
     </div>
   );
 };
