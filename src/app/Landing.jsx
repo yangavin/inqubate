@@ -21,7 +21,7 @@ export default function Landing() {
         />
         <div className="grow flex gap-5 justify-center">
           <Navigation href="#home">Home</Navigation>
-          <Navigation href="#about">Who we are</Navigation>
+          <Navigation href="/WhoWeAre">Who we are</Navigation>
           <Navigation href="#about">Ventures</Navigation>
           <Navigation href="#contact">Blog</Navigation>
         </div>

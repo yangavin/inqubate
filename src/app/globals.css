@@ -27,3 +27,30 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  .font-outline {
+    -webkit-text-stroke: 1px white;
+  }
+  .font-outline-2 {
+  text-shadow:
+   -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff;
+  }
+}
+
+@keyframes growLine {
+  from {
+      stroke-dasharray: 0, 4;
+  }
+  to {
+      stroke-dasharray: 200, 4;
+  }
+}
+
+.animate-line {
+  stroke-dasharray: 4, 4;
+  animation: growLine 2s forwards;
+}
