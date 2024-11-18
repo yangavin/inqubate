@@ -14,8 +14,7 @@ export default function Navbar() {
       <div className="flex flex-col md:flex-row gap-4 md:gap-5 justify-center grow">
         <Navigation href="/#home">Home</Navigation>
         <Navigation href="/WhoWeAre">Who we are</Navigation>
-        <Navigation href="#about">Ventures</Navigation>
-        <Navigation href="#contact">Blog</Navigation>
+        <Navigation href="/TeamPage">Team</Navigation>
       </div>
       <a
         href="#contact"

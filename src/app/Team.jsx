@@ -135,7 +135,7 @@ export default function Team() {
   return (
     <div className="relative">
       <div className="mx-4 sm:ml-64 sm:w-1/2">
-        <h1 className="text-4xl sm:text-6xl font-bold mb-4" id="contact">
+        <h1 className="text-4xl sm:text-6xl font-bold mb-4">
           inQUbate Team
         </h1>
         <p className="mb-8">
