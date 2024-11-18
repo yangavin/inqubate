@@ -3,7 +3,6 @@ import Landing from "./Landing";
 import About from "./about";
 import ContactUs from "./contact";
 import Team from "./Team";
-import TeamPage from "./TeamPage";
 import Ventures from "./Ventures";
 
 export default function Home() {

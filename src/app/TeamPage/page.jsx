@@ -1,10 +1,11 @@
-import Navigation from "./Navigation";
+"use client";
+
 import Image from "next/image";
-import { profiles, ProfileCard } from "./Team";
+import { profiles, ProfileCard } from "../Team";
 import { useState, useEffect } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
-import { members } from "./index";
-import { founders } from "./index";
+import { members } from "../index";
+import { founders } from "../index";
 
 export default function TeamPage() {
   const [currentIndex, setCurrentIndex] = useState(0);

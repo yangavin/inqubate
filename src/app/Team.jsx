@@ -119,12 +119,14 @@ const TeamSection = () => {
         ))}
       </div>
 
-      <button
-        className="mt-8 px-4 py-3 text-white border border-white rounded-lg bg-transparent hover:bg-white/30 transition ease-in-out duration-300"
-        style={{ width: "200px", height: "54px" }}
-      >
-        See All
-      </button>
+      <a href="/TeamPage">
+        <button
+          className="mt-8 px-4 py-3 text-white border border-white rounded-lg bg-transparent hover:bg-white/30 transition ease-in-out duration-300"
+          style={{ width: "200px", height: "54px" }}
+        >
+          See All
+        </button>
+      </a>
     </div>
   );
 };
