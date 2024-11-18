@@ -120,7 +120,7 @@ export default function Team() {
                         <p className="leading-6 font-light">Indulge in the ultimate expression of sophistication with Luxe Reserve, where every sip embodies the essence of luxury. </p>
                         <div className="flex justify-center">
                             <svg width="2" height="280" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="1" y1="0" x2="1" y2="280" stroke="#585858" strokeWidth="2" stroke-dasharray="32 8" />
+                                <line x1="1" y1="0" x2="1" y2="280" stroke="#585858" strokeWidth="2" strokeDasharray="32 8" />
                             </svg>
                         </div>
                     </div>
@@ -129,7 +129,7 @@ export default function Team() {
                         <p className="leading-6 font-light">Indulge in the ultimate expression of sophistication with Luxe Reserve, where every sip embodies the essence of luxury. </p>
                         <div className="flex justify-center">
                             <svg width="2" height="280" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="1" y1="0" x2="1" y2="280" stroke="#585858" strokeWidth="2" stroke-dasharray="32 8" />
+                                <line x1="1" y1="0" x2="1" y2="280" stroke="#585858" strokeWidth="2" strokeDasharray="32 8" />
                             </svg>
                         </div>
                     </div>
@@ -138,7 +138,7 @@ export default function Team() {
                         <p className="leading-6 font-light">Indulge in the ultimate expression of sophistication with Luxe Reserve, where every sip embodies the essence of luxury. </p>
                         <div className="flex justify-center">
                             <svg width="2" height="400" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="1" y1="0" x2="1" y2="400" stroke="#585858" strokeWidth="2" stroke-dasharray="32 8" />
+                                <line x1="1" y1="0" x2="1" y2="400" stroke="#585858" strokeWidth="2" strokeDasharray="32 8" />
                             </svg>
                         </div>
                     </div>
@@ -147,7 +147,7 @@ export default function Team() {
                         <p className="leading-6 font-light">Indulge in the ultimate expression of sophistication with Luxe Reserve, where every sip embodies the essence of luxury. </p>
                         <div className="flex justify-center">
                             <svg width="2" height="280" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="1" y1="0" x2="1" y2="280" stroke="#585858" strokeWidth="2" stroke-dasharray="32 8" />
+                                <line x1="1" y1="0" x2="1" y2="280" stroke="#585858" strokeWidth="2" strokeDasharray="32 8" />
                             </svg>
                         </div>
                     </div>
