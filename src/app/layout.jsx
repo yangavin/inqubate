@@ -23,6 +23,13 @@ export default function RootLayout({ children }) {
         />
         <Navbar />
         {children}
+        <div className="relative">
+          <img
+            src="landing-morph-lines.svg"
+            alt="webs"
+            className="-z-50 absolute w-full bottom-full scale-y-50 translate-y-[50rem] transform rotate-180"
+          />
+        </div>
         <Footer />
       </body>
     </html>

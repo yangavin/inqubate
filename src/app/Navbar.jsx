@@ -18,7 +18,8 @@ export default function Navbar() {
       </div>
       <a
         href="#contact"
-        className="w-full md:w-48 rounded-md text-center px-4 py-3 md:px-6 md:py-4 bg-gradient-to-r from-red-500 to-pink-700 shadow-lg hover:-translate-y-1 transition-transform"
+        className="w-full md:w-48 rounded-md text-center px-4 py-3 md:px-6 md:py-4 bg-gradient-to-r from-red-500 to-pink-700 shadow-lg hover:-translate-y-1 transition-transform
+        shadow-[3px_4px_14.8px_0px_rgba(255,255,255,0.25)]"
       >
         Contact Us
       </a>

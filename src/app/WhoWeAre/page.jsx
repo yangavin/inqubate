@@ -215,13 +215,6 @@ export default function Team() {
           className="w-full absolute -top-40"
         />
       </div>
-      <div className="relative mb-0 md:mb-40 xl:mb-80 2xl:mb-[500px]">
-        <img
-          src="landing-morph-lines.svg"
-          alt="webs"
-          className="-z-50 absolute w-full top-0 transform rotate-180"
-        />
-      </div>
 
       <div className="mx-20 lg:mx-40 xl:mx-64 mb-96 flex flex-col">
         <h2 className="text-7xl mb-8 text-[#C2C2C2] tracking-wider">

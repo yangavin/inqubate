@@ -45,7 +45,7 @@ export default function TeamPage() {
         className="absolute -z-30 right-0 top-0 hidden md:block"
       />
 
-      <div className="px-4 md:px-16 lg:px-[24rem] flex flex-col align-items-start mt-8 md:mt-20">
+      <div className="px-4 md:px-16 lg:px-[24rem] flex flex-col align-items-start mt-8 md:mt-24">
         <h1 className="text-4xl md:text-6xl font-bold mx-auto md:ml-10 mb-4">
           Our Team
         </h1>
@@ -58,7 +58,7 @@ export default function TeamPage() {
       </div>
 
       {/* Team Carousel Section */}
-      <div className="mt-6">
+      <div className="mt-10">
         <div className="p-4 sm:p-8 mb-8 md:mb-16 text-center">
           <div className="flex items-center justify-center space-x-2 md:space-x-8">
             <button
@@ -84,7 +84,7 @@ export default function TeamPage() {
           </div>
 
           {/* Team Members Section */}
-          <div className="flex flex-wrap justify-center gap-4 md:gap-8 mt-8">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-16 mt-8">
             {members.slice(0, 2).map((member, index) => (
               <div
                 key={index}
@@ -113,7 +113,7 @@ export default function TeamPage() {
                     alt={`${member.name}'s profile`}
                     className="w-12 h-12 md:w-24 md:h-24 rounded-full object-cover border-2 border-white"
                   />
-                  <span className="text-xs md:text-sm mt-2">{member.name}</span>
+                  <span className="text-xs md:text-sm mt-4">{member.name}</span>
                   <span className="text-xs">{member.role}</span>
                 </div>
               ))}
@@ -121,11 +121,11 @@ export default function TeamPage() {
           </div>
 
           {/* Founders Section */}
-          <div className="flex flex-col justify-center gap-y-8 md:gap-y-14 max-w-4xl mx-auto mt-16 md:mt-36">
+          <div className="flex flex-col justify-center gap-y-8 md:gap-y-14 max-w-4xl mx-auto mt-16 md:mt-40 mb-40">
             <h2 className="text-xl md:text-2xl font-thin text-white mt-6 md:mt-10">
               FOUNDERS
             </h2>
-            <div className="flex flex-wrap justify-center gap-4 md:gap-16">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-20">
               {founders.map((founder, index) => (
                 <div
                   key={index}
@@ -136,7 +136,7 @@ export default function TeamPage() {
                     alt={`${founder.name}'s profile`}
                     className="w-12 h-12 md:w-24 md:h-24 rounded-full object-cover border-2 border-white"
                   />
-                  <span className="text-xs md:text-sm mt-2">
+                  <span className="text-xs md:text-sm mt-4">
                     {founder.name}
                   </span>
                 </div>
