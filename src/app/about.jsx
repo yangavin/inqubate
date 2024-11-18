@@ -33,7 +33,6 @@ const About = () => {
 
       {/*Bottom sections */}
       <div className="relative pt-16 right-[0px] bottom-[-20px] max-w-[1536px]  items-start  ">
-
         {/*image slider */}
         <div className="absolute top-[115px] left-[-20px]  ">
           <div className="absolute left-[194px] bottom-[187px]  w-[397px] h-[517px] bg-white/30 backdrop-lg pl-4 pt-4 pb-4 rounded-[15px] "></div>

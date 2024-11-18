@@ -174,4 +174,12 @@ export const founders = [
     name: "Joseph Liao",
     image: "/team/Joseph_Liao.png",
   },
+  {
+    name: "Joseph Liao",
+    image: "/team/Joseph_Liao.png",
+  },
+  {
+    name: "Joseph Liao",
+    image: "/team/Joseph_Liao.png",
+  },
 ];

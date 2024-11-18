@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
           <img
             src="landing-morph-lines.svg"
             alt="webs"
-            className="-z-50 absolute w-full bottom-full scale-y-50 translate-y-[50rem] transform rotate-180"
+            className="absolute w-full h-auto object-cover object-bottom -z-50 bottom-full rotate-180 translate-y-[25%] scale-y-50"
           />
         </div>
         <Footer />

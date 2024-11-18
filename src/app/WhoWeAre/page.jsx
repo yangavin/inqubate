@@ -206,7 +206,7 @@ export default function Team() {
           </div>
         </div>
       </div>
-      <div className="relative h-[400px]">
+      <div className="relative h-[800px]">
         <Image
           src="/tube2.png"
           width={1000}
