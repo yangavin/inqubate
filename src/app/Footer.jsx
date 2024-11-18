@@ -28,15 +28,15 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start space-y-2 self-end">
           <p className="text-lg font-semibold">Subscribe to our BLOG:</p>
           <div className="flex space-x-4">
-            <button className="border border-white bg-gray-950 text-white px-4 py-2 rounded-xl hover:bg-[#9c224b]">
-              Subscribe
-            </button>
             <input
               type="email"
               id="email"
               placeholder="Enter your email"
               className="px-4 py-2 text-white rounded-xl bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
+            <button className="border border-white bg-gray-950 text-white px-4 py-2 rounded-xl hover:bg-[#9c224b]">
+              Subscribe
+            </button>
           </div>
         </div>
 
