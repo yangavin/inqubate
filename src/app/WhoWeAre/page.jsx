@@ -21,32 +21,6 @@ const StatCard = ({ number, text }) => {
 export default function Team() {
     return (
         <div className="mb-36">
-            <img
-                src="landing-morph-lines.svg"
-                alt="webs"
-                className="-z-50 absolute w-full"
-            />
-            <nav className="px-20 py-6 flex bg-none">
-                <Image
-                    src="inqubate.svg"
-                    alt="inqubate"
-                    width={250}
-                    height={250}
-                    className=""
-                />
-                <div className="grow flex gap-5 justify-center">
-                <Navigation href="/#home">Home</Navigation>
-                <Navigation href="/WhoWeAre">Who we are</Navigation>
-                <Navigation href="#about">Ventures</Navigation>
-                <Navigation href="#contact">Blog</Navigation>
-                </div>
-                <a
-                    href="#contact"
-                    className="w-48 rounded-md text-center px-6 py-4 bg-gradient-to-r from-red-500 to-pink-700 shadow-[2px_5px_20px_grey] hover:-translate-y-1 transition-transform"
-                >
-                    Contact Us
-                </a>
-            </nav>
 
             {/* First Section */}
             <div className="mx-20 lg:mx-40 xl:mx-64 mt-40 mb-24 flex flex-row h-64">
@@ -83,7 +57,7 @@ export default function Team() {
             </div>
             
             {/* Second Section */}
-            <div className="mx-20 lg:mx-40 xl:mx-64 mb-24 flex flex-row">
+            <div className="mx-20 lg:mx-40 xl:mx-64 mb-64 flex flex-row">
                 <div className="flex flex-row w-full gap-4 lg:gap-8">
                     <StatCard number="57%" text="Indulge in the ultimate expression of sophistication" />
                     <StatCard number="+10,000" text="Indulge in the ultimate expression of sophistication" />
@@ -93,7 +67,7 @@ export default function Team() {
             </div>
 
             {/* Third Section */}
-            <div className="mx-20 lg:mx-40 xl:mx-64 mb-24 flex flex-row h-64">
+            <div className="mx-20 lg:mx-40 xl:mx-64 mb-64 flex flex-row h-64">
                 <div className="flex flex-col flex-1 justify-center h-full">
                     <h1 className="text-[#C2C2C2] text-2xl mb-8">MISSION STATEMENT</h1>
                     <p>Indulge in the ultimate expression of sophistication with Luxe Reserve, where every sip embodies the essence of luxury. Indulge in the ultimate expression of sophistication with Luxe Reserve, where every sip embodies the essence of luxury.</p>
@@ -153,7 +127,7 @@ export default function Team() {
                     </div>
                 </div>
             </div>
-            <div className="relative h-[400px] mb-0 md:mb-40 xl:mb-80 2xl:mb-[500px]">
+            <div className="relative h-[400px]">
                 <Image
                     src="/tube2.png"
                     width={1000}
@@ -161,6 +135,8 @@ export default function Team() {
                     alt="Tube graphic"
                     className="w-full absolute -top-40"
                 />
+            </div>
+            <div className="relative mb-0 md:mb-40 xl:mb-80 2xl:mb-[500px]">
                 <img
                     src="landing-morph-lines.svg"
                     alt="webs"
@@ -174,7 +150,7 @@ export default function Team() {
                 <p className="text-md">Indulge in the ultimate expression of sophistication with Luxe Reserve, where every sip embodies the essence of luxury. Indulge in the ultimate expression of sophistication with Luxe Reserve, where every sip embodies the essence of luxury.Indulge in the ultimate expression of sophistication with Luxe Reserve, where every sip embodies the essence of luxury. Indulge in the ultimate expression of sophistication with Luxe Reserve, where every sip embodies the essence of luxury. Beneath a canopy of shimmering stars, the small village of Elmsbrook seemed to hold its breath. The moonlight danced on the cobblestone streets, casting long, whimsical shadows that swayed with the gentle breeze. In the heart of th</p>
             </div>
 
-            <div className="mx-20 lg:mx-40 xl:mx-64 mb-24 flex flex-col items-center justify-center">
+            <div className="mx-20 lg:mx-40 xl:mx-64 mb-72 flex flex-col items-center justify-center">
                 <h3 className="text-[#C2C2C2] text-2xl mb-8">PHOTO GALLERY</h3>
                 <div className= "w-full h-[500px]">
                     <WideImageSlider images={images}/>
