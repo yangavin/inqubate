@@ -60,9 +60,6 @@ const Footer = () => {
           <a href="/TeamPage" className="block hover:opacity-75">
             Team
           </a>
-          <a href="#" className="block hover:opacity-75">
-            Blog
-          </a>
         </div>
       </div>
     </footer>
