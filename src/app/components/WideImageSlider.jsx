@@ -20,10 +20,7 @@ const WideImageSlider = ({ images }) => {
 
   return (
     <div className="">
-      <Slider
-        {...settings}
-        style={{ width: "100%", height: "500px" }}
-      >
+      <Slider {...settings} style={{ width: "100%", height: "500px" }}>
         {images.map((src, index) => (
           <img
             key={index}

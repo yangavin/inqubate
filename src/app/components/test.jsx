@@ -1,5 +1,6 @@
 "use client"; // Ensure this component runs on the client side
-import React, { useState, useEffect } from "react";
+
+import React, { useState } from "react";
 
 const TestIndicators = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

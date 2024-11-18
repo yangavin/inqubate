@@ -1,11 +1,8 @@
 "use client";
 
 export default function Message() {
-
-    return(
-      <div
-      className="absolute z-500 Message-container"
-    >
+  return (
+    <div className="absolute z-500 Message-container">
       <img
         src="/images/Message.svg"
         alt="Message"
@@ -14,7 +11,5 @@ export default function Message() {
         data-depth="-0.05"
       />
     </div>
-    );
+  );
 }
-
-

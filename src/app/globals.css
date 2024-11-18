@@ -33,20 +33,20 @@ body {
     -webkit-text-stroke: 1px white;
   }
   .font-outline-2 {
-  text-shadow:
-   -1px -1px 0 #fff,  
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-     1px 1px 0 #fff;
+    text-shadow:
+      -1px -1px 0 #fff,
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+      1px 1px 0 #fff;
   }
 }
 
 @keyframes growLine {
   from {
-      stroke-dasharray: 0, 4;
+    stroke-dasharray: 0, 4;
   }
   to {
-      stroke-dasharray: 200, 4;
+    stroke-dasharray: 200, 4;
   }
 }
 

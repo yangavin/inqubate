@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
@@ -18,9 +18,8 @@ const Footer = () => {
                 <img src="/google.svg" alt="Google" className="w-8 h-8" />
               </a>
             </div>
-
           </div>
-          
+
           <div className="mt-8">
             <img src="/inqubate.svg" alt="InQubate" className="w-48" />
           </div>

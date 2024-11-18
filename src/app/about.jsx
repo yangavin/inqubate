@@ -32,10 +32,9 @@ const About = () => {
       </div>
 
       {/*Bottom sections */}
-
       <div className="relative pt-16 right-[0px] bottom-[-20px] max-w-[1536px]  items-start  ">
-        {/*image slider */}
 
+        {/*image slider */}
         <div className="absolute top-[115px] left-[-20px]  ">
           <div className="absolute left-[194px] bottom-[187px]  w-[397px] h-[517px] bg-white/30 backdrop-lg pl-4 pt-4 pb-4 rounded-[15px] "></div>
           <ImageSliders className="relative" images={images} />
@@ -94,7 +93,6 @@ const About = () => {
         </div>
 
         {/*Words on top of the cones*/}
-
         <div className="absolute w-[230px] h-[140px] top-[228px] left-[655px] overflow-visible">
           <h1 className="text-center text-4xl font-bold font-arial text-transparent bg-clip-text bg-gradient-to-b from-white via-white/80 to-[#FF7A85] p-8">
             10+
