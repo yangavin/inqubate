@@ -19,7 +19,7 @@ const Contact = () => {
 
         {/* Align the tube to the right side of the parent container */}
         <div className="absolute top-[-270px] right-[-145px]">
-          <C_tube />
+          {/* <C_tube /> */}
         </div>
       </div>
     </div>
