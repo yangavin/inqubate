@@ -4,12 +4,14 @@ import About from "./about";
 import ContactUs from "./contact";
 import Team from "./Team";
 import TeamPage from "./TeamPage";
+import Ventures from "./Ventures";
 
 export default function Home() {
   return (
     <>
       <Landing />
       <About />
+      <Ventures />
       <Team />
       <ContactUs />
     </>
