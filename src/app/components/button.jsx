@@ -4,12 +4,13 @@ import React from "react";
 
 const Button = () => {
   return (
-    <button
-      className="text-white border border-white rounded-lg bg-transparent hover:bg-white/30 transition ease-in-out duration-300"
-      style={{ width: "200px", height: "54px" }}
-    >
-      Explore More
-    </button>
+    <a href="/WhoWeAre">
+      <button
+        className="text-white border border-white rounded-lg bg-transparent hover:bg-white/30 transition ease-in-out duration-300 w-40 h-12"
+      >
+        Explore More
+      </button>
+    </a>
   );
 };
 
