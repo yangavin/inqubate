@@ -8,10 +8,20 @@ const Footer = () => {
           <div className="space-y-1">
             <p className="text-lg font-semibold">Follow Us On:</p>
             <div className="flex items-center space-x-4">
-              <a href="#" className="hover:opacity-75">
+              <a
+                href="https://www.instagram.com/inqubate.qu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-75"
+              >
                 <img src="/insta.svg" alt="Instagram" className="w-8 h-8" />
               </a>
-              <a href="#" className="hover:opacity-75">
+              <a
+                href="https://www.linkedin.com/company/inqubate-dt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-75"
+              >
                 <img src="/linkedin.svg" alt="LinkedIn" className="w-8 h-8" />
               </a>
               <a href="#" className="hover:opacity-75">
@@ -41,14 +51,14 @@ const Footer = () => {
         </div>
 
         <div className="text-center md:text-right space-y-2">
-          <a href="#" className="block hover:opacity-75">
+          <a href="/" className="block hover:opacity-75">
             Home
           </a>
-          <a href="#" className="block hover:opacity-75">
+          <a href="/WhoWeAre" className="block hover:opacity-75">
             Who we are
           </a>
-          <a href="#" className="block hover:opacity-75">
-            Ventures
+          <a href="/TeamPage" className="block hover:opacity-75">
+            Team
           </a>
           <a href="#" className="block hover:opacity-75">
             Blog
