@@ -32,53 +32,59 @@ export const ContactUs = () => {
 
   return (
     <form
-      ref={form}
-      onSubmit={sendEmail}
-      className="flex flex-col gap-4  rounded-md relative z-10"
-    >
-      <input
-        type="text"
-        name="user_name"
-        className="border border-gray-900 p-2 rounded-[10px] bg-gray-900 text-white placeholder-gray-400 w-[747px]"
-        placeholder="Enter your name"
-        required
-      />
+  ref={form}
+  onSubmit={sendEmail}
+  className="flex flex-col gap-4 rounded-md relative z-10"
+>
+  {/* Name Input */}
+  <input
+    type="text"
+    name="user_name"
+    className="border border-gray-900 p-2 rounded-[10px] bg-gray-900 text-white placeholder-gray-400 w-[600px] sm:w-[80%] lg:w-[70%]"
+    placeholder="Enter your name"
+    required
+  />
 
-      <input
-        type="email"
-        name="user_email"
-        className="border border-gray-900 p-2 rounded-[10px] bg-gray-900 text-white placeholder-gray-400 w-[747px]"
-        placeholder="Enter your email"
-        required
-      />
+  {/* Email Input */}
+  <input
+    type="email"
+    name="user_email"
+    className="border border-gray-900 p-2 rounded-[10px] bg-gray-900 text-white placeholder-gray-400 w-[600px] sm:w-[80%] lg:w-[70%]"
+    placeholder="Enter your email"
+    required
+  />
 
-      <textarea
-        name="message"
-        className="border border-gray-900 p-2 rounded-[10px] bg-gray-900 text-white placeholder-gray-400 w-[747px] h-[150px] resize-none"
-        placeholder="Enter your message"
-        required
-      />
+  {/* Message Textarea */}
+  <textarea
+    name="message"
+    className="border border-gray-900 p-2 rounded-[10px] bg-gray-900 text-white placeholder-gray-400 w-[600px] sm:w-[80%] lg:w-[70%] h-[150px] resize-none"
+    placeholder="Enter your message"
+    required
+  />
 
-      <div className="flex flex-col sm:flex-row items-center w-full mt-2 mb-4 sm:mt-8">
-        <div className="flex-shrink-0 w-full sm:w-auto">
-          {!isSubmitted && !sending && (
-            <button className="font-bold border border-white rounded-lg cursor-pointer w-full sm:w-44 h-12 transition-transform duration-400 hover:-translate-y-1 hover:bg-slate-900">
-              Submit
-            </button>
-          )}
+  {/* Submit Button Section */}
+  <div className="flex flex-col sm:flex-row items-center w-full mt-2 mb-4 sm:mt-8 sm:w-[40%] lg:w-[70%]">
+    {/* Button */}
+    <div className="flex-shrink-0 w-full sm:w-auto">
+      {!isSubmitted && !sending && (
+        <button className="font-bold border border-white rounded-lg cursor-pointer w-full sm:w-44 h-12 transition-transform duration-400 hover:-translate-y-1 hover:bg-slate-900">
+          Submit
+        </button>
+      )}
+      {isSubmitted && (
+        <button className="font-bold border border-white rounded-lg cursor-pointer w-full sm:w-44 h-12 transition-transform duration-400 hover:-translate-y-1 hover:bg-slate-900">
+          Complete
+        </button>
+      )}
+    </div>
 
-          {isSubmitted && (
-            <button className="font-bold border border-white rounded-lg cursor-pointer w-full sm:w-44 h-12 transition-transform duration-400 hover:-translate-y-1 hover:bg-slate-900">
-              Complete
-            </button>
-          )}
-        </div>
+    {/* Message Display */}
+    <div className="flex flex-col items-start pb-4 mt-4 sm:mt-0 sm:pl-8 sm:w-[40%] lg:w-[70%]">
+      <Message />
+    </div>
+  </div>
+</form>
 
-        <div className="flex flex-col items-start pb-4 mt-4 sm:mt-0 sm:pl-8">
-          <Message />
-        </div>
-      </div>
-    </form>
   );
 };
 
